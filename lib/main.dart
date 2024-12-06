@@ -19,22 +19,33 @@ class Home extends StatelessWidget {
       body: Row(
           children: <Widget>[
             Expanded(
+                child: Image.asset('assets/map_icon.png'),
+              flex: 3,
+            ),
+            Expanded(
+              flex: 1,
               child: Container(
                 padding: EdgeInsets.all(30.0),
                 color: Colors.cyan,
+                child: Text('3'),
+              ),
+            ),
+            Expanded(
+              flex: 1,
+              child: Container(
+                padding: EdgeInsets.all(30.0),
+                color: Colors.pinkAccent,
+                child: Text('2'),
+              ),
+            ),
+            Expanded(
+              flex: 1,
+              child: Container(
+                padding: EdgeInsets.all(30.0),
+                color: Colors.amber,
                 child: Text('1'),
               ),
             ),
-          Container(
-            padding: EdgeInsets.all(30.0),
-            color: Colors.pinkAccent,
-            child: Text('2'),
-          ),
-          Container(
-            padding: EdgeInsets.all(30.0),
-            color: Colors.amber,
-            child: Text('3'),
-          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(onPressed: () {},child: Text('click me'),backgroundColor: Colors.amber),
