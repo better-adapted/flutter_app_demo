@@ -26,12 +26,12 @@ class Home extends StatelessWidget {
             child: Text('one'),
           ),
           Container(
-            padding: EdgeInsets.all(20.0),
+            padding: EdgeInsets.all(30.0),
             color: Colors.pink,
             child: Text('two'),
           ),
           Container(
-            padding: EdgeInsets.all(20.0),
+            padding: EdgeInsets.all(40.0),
             color: Colors.green,
             child: Text('three'),
           )
