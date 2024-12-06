@@ -13,6 +13,7 @@ class NinjaCard extends StatelessWidget {
         title: Text('Ninja ID Card'),
         centerTitle: true,
         backgroundColor: Colors.grey[850],
+        titleTextStyle: TextStyle(color: Colors.white),
         elevation: 0.0,
       ),
       body: Padding(
@@ -22,7 +23,7 @@ class NinjaCard extends StatelessWidget {
           children: <Widget>[
             Center(
               child: CircleAvatar(
-                radius: 40.0,
+                radius: 100.0,
                 backgroundImage: AssetImage('assets/thumb.jpg'),
               ),
             ),
