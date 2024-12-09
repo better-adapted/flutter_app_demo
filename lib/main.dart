@@ -37,7 +37,14 @@ class _QuoteListState extends State<QuoteList> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: quotes.map((quote) => QuoteCard(quote: quote)).toList(),
+        children: quotes.map((quote) => QuoteCard(
+            quote: quote,
+            delete_func: () {
+              setState(() {
+                quotes.remove(quote);
+              });
+            }
+        )).toList(),
         )
       );
   }
