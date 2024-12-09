@@ -34,9 +34,17 @@ class _QuoteListState extends State<QuoteList> {
         backgroundColor: Colors.redAccent,
       ),
       body: Column(
-        children: quotes.map((quote) => Text('${quote.text} - ${quote.author}')).toList(),
-      ),
-    );
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        // children: quotes.map((quote) => Text('${quote.text} - ${quote.author}')).toList(),
+        children: quotes.map((quote) {
+              var index = quotes.indexOf(quote);
+              var temp = index.toInt().toString();
+              temp += ' ${quote.text} - ${quote.author}';
+              return Text(textAlign: TextAlign.left,temp);
+            }).toList()
+        )
+      );
   }
 }
 
